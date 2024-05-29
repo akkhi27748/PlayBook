@@ -87,7 +87,6 @@ img{
 }
 
 .carousel-item {
-    min-width: 100%;
     display: none;
 }
 
@@ -127,6 +126,16 @@ img{
 
 @media (min-width:1370){
     .img{
+        height: 100vh;
+    }
+    .carousel-item{
+        min-width: 100%;
+    }
+}
+
+@media (max-width:700px)
+{
+    .carousel-item{
         height: 100vh;
     }
 }
