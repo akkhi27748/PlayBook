@@ -82,7 +82,7 @@ body {
 
 /* Responsive Design */
 /* Small Devices (max-width: 480px) */
-@media (max-width: 480px) {
+@media (max-width: 580px) {
 
     .prev,
     .next {
@@ -92,18 +92,21 @@ body {
 }
 
 /* Medium Devices (min-width: 481px and max-width: 768px) */
-@media (min-width: 481px) and (max-width: 768px) {
+@media (min-width: 581px) and (max-width: 768px) {
 
     .prev,
     .next {
         font-size: 1.25rem;
         padding: 7px;
     }
-    .carousel ,
-    .carousel-inner,
-    .carousel-item {
-        height: 100vh;
-    }
+        .carousel,
+        .carousel-item {
+            height: 100vh;
+        }
+                .carousel-inner{
+                    height: 100%;
+                }
+
 
 }
 
@@ -115,11 +118,14 @@ body {
         font-size: 1.5rem;
         padding: 10px;
     }
-        .carousel,
-        .carousel-inner,
-        .carousel-item {
-            height: 100vh;
-        }
+                .carousel,
+                .carousel-item {
+                    height: 100vh;
+                }
+        
+                .carousel-inner {
+                    height: 100%;
+                }
 }
 
 /* Extra Large Devices (min-width: 1201px) */
@@ -130,9 +136,12 @@ body {
         font-size: 2rem;
         padding: 10px;
     }
-        .carousel,
-        .carousel-inner,
-        .carousel-item {
-            height: 100vh;
-        }
+                .carousel,
+                .carousel-item {
+                    height: 100vh;
+                }
+        
+                .carousel-inner {
+                    height: 100%;
+                }
 }
