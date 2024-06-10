@@ -66,10 +66,9 @@ body {
 }
 
 .prev:hover,
-.next:hover{
+.next:hover {
     background-color: rgba(0, 0, 0, 0.7);
     color: white;
-
 }
 
 .prev {
@@ -80,8 +79,104 @@ body {
     right: 10px;
 }
 
+/* Home Button Styling */
+.home {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 3.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1;
+    border-radius: 50%;
+    font-size: 0.5rem;
+}
+
+.home:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* Feedback Form Styling */
+.feedback-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.feedback-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.feedback-form form h2 {
+    margin-bottom: 20px;
+    color: #1F74BA;
+}
+
+.feedback-form form label {
+    margin-bottom: 5px;
+    color: #1F74BA;
+}
+
+.feedback-form form input,
+.feedback-form form textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.feedback-form form button {
+    background-color: #F8D706;
+    color: #1F74BA;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.feedback-form form button:hover {
+    background-color: #1F74BA;
+    color: #F8D706;
+}
+
+/* Pagination Styling */
+.carousel-pagination {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 1rem;
+}
+
+.carousel-pagination button {
+    width: 1.3rem;
+    height: 1.3rem;
+    border: none;
+    border-radius: 50%;
+    background-color: #ccc;
+    cursor: pointer;
+    margin-bottom: 0.4rem;
+}
+
+.carousel-pagination button.active {
+    background-color: #1F74BA;
+}
+
 /* Responsive Design */
-/* Small Devices (max-width: 480px) */
+/* Small Devices (max-width: 580px) */
 @media (max-width: 580px) {
 
     .prev,
@@ -89,9 +184,14 @@ body {
         font-size: 1rem;
         padding: 5px;
     }
+
+    .home {
+        font-size: 1rem;
+        padding: 5px;
+    }
 }
 
-/* Medium Devices (min-width: 481px and max-width: 768px) */
+/* Medium Devices (min-width: 581px and max-width: 768px) */
 @media (min-width: 581px) and (max-width: 768px) {
 
     .prev,
@@ -99,15 +199,20 @@ body {
         font-size: 1.25rem;
         padding: 7px;
     }
-        .carousel,
-        .carousel-item {
-            height: 100vh;
-        }
-                .carousel-inner{
-                    height: 100%;
-                }
 
+    .home {
+        font-size: 1.25rem;
+        padding: 7px;
+    }
 
+    .carousel,
+    .carousel-item {
+        height: 100vh;
+    }
+
+    .carousel-inner {
+        height: 100%;
+    }
 }
 
 /* Large Devices (min-width: 769px and max-width: 1200px) */
@@ -118,14 +223,20 @@ body {
         font-size: 1.5rem;
         padding: 10px;
     }
-                .carousel,
-                .carousel-item {
-                    height: 100vh;
-                }
-        
-                .carousel-inner {
-                    height: 100%;
-                }
+
+    .home {
+        font-size: 1.5rem;
+        padding: 10px;
+    }
+
+    .carousel,
+    .carousel-item {
+        height: 100vh;
+    }
+
+    .carousel-inner {
+        height: 100%;
+    }
 }
 
 /* Extra Large Devices (min-width: 1201px) */
@@ -136,12 +247,18 @@ body {
         font-size: 2rem;
         padding: 10px;
     }
-                .carousel,
-                .carousel-item {
-                    height: 100vh;
-                }
-        
-                .carousel-inner {
-                    height: 100%;
-                }
+
+    .home {
+        font-size: 2rem;
+        padding: 10px;
+    }
+
+    .carousel,
+    .carousel-item {
+        height: 100vh;
+    }
+
+    .carousel-inner {
+        height: 100%;
+    }
 }

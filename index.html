@@ -1,12 +1,13 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Playbook</title>
     <link rel="stylesheet" href="index.css">
     <link rel="shortcut icon" href="./assets/icon/flipkart-icon.svg" type="image/x-icon">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
 <body>
@@ -37,12 +38,29 @@
             <img src="./22.gif" alt="Image 22" class="carousel-item" loading="lazy">
             <img src="./23.gif" alt="Image 23" class="carousel-item" loading="lazy">
             <img src="./24.gif" alt="Image 24" class="carousel-item" loading="lazy">
+            <!-- Feedback Form as the last carousel item -->
+            <div class="carousel-item feedback-form">
+                <form id="feedbackForm">
+                    <h2>Feedback Form</h2>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="contact">Contact:</label>
+                    <input type="tel" id="contact" name="contact" required>
+                    <label for="feedback">Feedback:</label>
+                    <textarea id="feedback" name="feedback" rows="4" required></textarea>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
         </div>
         <button class="prev" onclick="moveCarousel(-1)">&#10094;</button>
         <button class="next" onclick="moveCarousel(1)">&#10095;</button>
+        <button class="home" onclick="moveToFirst()"><i class='bx bx-home-alt'></i></button>
+        <div class="carousel-pagination">
+            <!-- Pagination dots will be dynamically added here -->
+        </div>
     </div>
-
-    
 
     <script src="script.js"></script>
 </body>
